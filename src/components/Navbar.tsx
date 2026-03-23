@@ -1,16 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+
+const servicePages = [
+  { label: "Printing Press Bhilwara", href: "/printing-press-bhilwara" },
+  { label: "Catalogue Printing", href: "/catalogue-printing-bhilwara" },
+  { label: "Visiting Card Printing", href: "/visiting-card-printing-bhilwara" },
+  { label: "Wedding Card Printing", href: "/wedding-card-printing-bhilwara" },
+  { label: "Brochure Printing", href: "/brochure-printing-bhilwara" },
+  {
+    label: "Sticker & Label Printing",
+    href: "/sticker-label-printing-bhilwara",
+  },
+  { label: "Garment Hang Tags", href: "/garment-hang-tags-printing" },
+  {
+    label: "Offset Printing Services",
+    href: "/offset-printing-services-bhilwara",
+  },
+  { label: "Book & Report Printing", href: "/book-report-printing-bhilwara" },
+  { label: "Food Menu Printing", href: "/food-menu-printing" },
+];
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/#about" },
+  { label: "Process", href: "/#process" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const WA_LINK = "https://wa.me/+919414259587";
@@ -18,11 +37,28 @@ const WA_LINK = "https://wa.me/+919414259587";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
+        setServicesOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   // Lock body scroll while mobile menu is open
@@ -50,9 +86,9 @@ export default function Navbar() {
             className="flex items-center justify-between h-[72px]"
             aria-label="Main navigation"
           >
-            {/* Logo */}
-            <a
-              href="#"
+            {/* Logo — use Link instead of <a> */}
+            <Link
+              href="/"
               aria-label="Global Printers — home"
               className="flex-shrink-0"
             >
@@ -64,16 +100,74 @@ export default function Navbar() {
                 priority
                 className="h-9 w-auto"
               />
-            </a>
+            </Link>
 
             {/* Desktop nav links */}
             <ul
               className="hidden lg:flex items-center gap-8 list-none m-0 p-0"
               role="list"
             >
+              {/* Services dropdown */}
+              <li ref={dropdownRef} className="relative">
+                <button
+                  onClick={() => setServicesOpen((v) => !v)}
+                  className="relative flex items-center gap-1 font-body text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-200 group"
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                >
+                  Services
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform duration-200 ${
+                      servicesOpen ? "rotate-180" : ""
+                    }`}
+                    aria-hidden="true"
+                  />
+                  <span
+                    className="absolute bottom-0 left-0 h-px bg-accent w-0 group-hover:w-full transition-all duration-200"
+                    aria-hidden="true"
+                  />
+                </button>
+
+                <AnimatePresence>
+                  {servicesOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.18, ease: "easeOut" }}
+                      className="absolute top-[calc(100%+12px)] left-0 z-50 w-64 rounded-md bg-surface border border-border shadow-xl py-2"
+                      role="menu"
+                    >
+                      {/* Anchor link back to homepage services section */}
+                      <Link
+                        href="/#services"
+                        onClick={() => setServicesOpen(false)}
+                        className="block px-4 py-2.5 font-body text-sm text-text-muted hover:text-accent hover:bg-surface-alt transition-colors duration-150"
+                        role="menuitem"
+                      >
+                        All Services →
+                      </Link>
+                      <div className="my-1 border-t border-border" />
+                      {servicePages.map(({ label, href }) => (
+                        <Link
+                          key={href}
+                          href={href}
+                          onClick={() => setServicesOpen(false)}
+                          className="block px-4 py-2.5 font-body text-sm text-text-secondary hover:text-accent hover:bg-surface-alt transition-colors duration-150"
+                          role="menuitem"
+                        >
+                          {label}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </li>
+
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="relative font-body text-sm font-medium text-text-secondary hover:text-text-primary transition-colors duration-200 group pb-1"
                   >
@@ -83,7 +177,7 @@ export default function Navbar() {
                       className="absolute bottom-0 left-0 h-px bg-accent w-0 group-hover:w-full transition-all duration-200"
                       aria-hidden="true"
                     />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -129,22 +223,70 @@ export default function Navbar() {
               className="flex flex-col items-center justify-center flex-1 gap-10"
               aria-label="Mobile navigation"
             >
+              {/* Mobile Services — collapsible */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0, duration: 0.22, ease: "easeOut" }}
+                className="flex flex-col items-center gap-3"
+              >
+                <button
+                  onClick={() => setMobileServicesOpen((v) => !v)}
+                  className="flex items-center gap-2 font-display text-4xl font-medium text-text-primary hover:text-accent transition-colors duration-200"
+                  aria-expanded={mobileServicesOpen}
+                >
+                  Services
+                  <ChevronDown
+                    size={24}
+                    className={`transition-transform duration-200 ${
+                      mobileServicesOpen ? "rotate-180" : ""
+                    }`}
+                    aria-hidden="true"
+                  />
+                </button>
+                <AnimatePresence initial={false}>
+                  {mobileServicesOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.22, ease: "easeOut" }}
+                      className="overflow-hidden flex flex-col items-center gap-2"
+                    >
+                      {servicePages.map(({ label, href }) => (
+                        <Link
+                          key={href}
+                          href={href}
+                          onClick={closeMenu}
+                          className="font-body text-base text-text-secondary hover:text-accent transition-colors duration-150"
+                        >
+                          {label}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+
               {navLinks.map((link, i) => (
-                <motion.a
+                <motion.div
                   key={link.href}
-                  href={link.href}
-                  onClick={closeMenu}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{
-                    delay: i * 0.07,
+                    delay: (i + 1) * 0.07,
                     duration: 0.22,
                     ease: "easeOut",
                   }}
-                  className="font-display text-4xl font-medium text-text-primary hover:text-accent transition-colors duration-200"
                 >
-                  {link.label}
-                </motion.a>
+                  <Link
+                    href={link.href}
+                    onClick={closeMenu}
+                    className="font-display text-4xl font-medium text-text-primary hover:text-accent transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
 
               {/* CTA in mobile menu */}
@@ -156,7 +298,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: navLinks.length * 0.07,
+                  delay: (navLinks.length + 1) * 0.07,
                   duration: 0.22,
                   ease: "easeOut",
                 }}

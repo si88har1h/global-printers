@@ -24,9 +24,36 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Global Printers — Offset Printing in Bhilwara | Premium Print Solutions Since 1996",
+  metadataBase: new URL("https://globalprinters.in"),
+  title: {
+    default: "Global Printers — Offset Printing in Bhilwara | Premium Print Solutions Since 1996",
+    template: "%s | Global Printers Bhilwara",
+  },
   description:
     "Global Printers is a Bhilwara-based offset printing company with 30+ years of experience. Brochures, business cards, catalogues, packaging, labels and more. Serving D2C brands and corporates pan-India. Get a quote on WhatsApp.",
+  keywords: [
+    "printing press Bhilwara",
+    "offset printing Bhilwara",
+    "catalogue printing Bhilwara",
+    "visiting card printing Bhilwara",
+    "brochure printing Bhilwara",
+    "wedding card printing Bhilwara",
+    "printing press Rajasthan",
+    "D2C printing India",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Global Printers — Offset Printing in Bhilwara | Premium Print Solutions Since 1996",
     description:
@@ -34,6 +61,22 @@ export const metadata: Metadata = {
     siteName: "Global Printers",
     locale: "en_IN",
     type: "website",
+    url: "https://globalprinters.in",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Global Printers — Premium Offset Printing in Bhilwara, Rajasthan",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Global Printers — Offset Printing in Bhilwara",
+    description:
+      "Premium offset printing in Bhilwara. Brochures, catalogues, visiting cards, wedding cards & more. 30+ years. 72hr turnaround.",
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: [

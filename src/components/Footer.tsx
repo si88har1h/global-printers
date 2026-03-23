@@ -1,14 +1,23 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MessageCircle, Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const WA_LINK = "https://wa.me/+919414259587";
 
 const quickLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "#about" },
-  { label: "Process", href: "#process" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "About", href: "/#about" },
+  { label: "Process", href: "/#process" },
+  { label: "Contact", href: "/#contact" },
+];
+
+const servicePages = [
+  { label: "Printing Press Bhilwara", href: "/printing-press-bhilwara" },
+  { label: "Catalogue Printing", href: "/catalogue-printing-bhilwara" },
+  { label: "Visiting Card Printing", href: "/visiting-card-printing-bhilwara" },
+  { label: "Wedding Card Printing", href: "/wedding-card-printing-bhilwara" },
+  { label: "Brochure Printing", href: "/brochure-printing-bhilwara" },
 ];
 
 const contactItems = [
@@ -31,7 +40,7 @@ export default function Footer() {
     <footer aria-label="Site footer" className="bg-bg border-t border-border">
       {/* Main columns */}
       <div className="section-container py-16 lg:py-24">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           {/* Column 1 — Brand */}
           <div className="flex flex-col gap-6">
             <a href="#" aria-label="Global Printers — back to top">
@@ -84,7 +93,28 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Column 3 — Contact */}
+          {/* Column 3 — Service Pages */}
+          <div className="flex flex-col gap-5">
+            <p className="font-mono text-xs text-text-muted tracking-[0.15em] uppercase">
+              Services
+            </p>
+            <nav aria-label="Service pages">
+              <ul className="flex flex-col gap-3 list-none p-0 m-0" role="list">
+                {servicePages.map(({ label, href }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="font-body text-sm text-text-secondary no-underline transition-colors duration-150 hover:text-text-primary"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+
+          {/* Column 4 — Contact */}
           <div className="flex flex-col gap-4">
             <p className="font-mono text-xs text-text-muted tracking-[0.15em] uppercase">
               Contact

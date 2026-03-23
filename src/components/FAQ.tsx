@@ -7,9 +7,25 @@ import { faqs } from '@/src/data/faqs';
 
 const WA_LINK = 'https://wa.me/+919414259587';
 
+// Only the original 8 homepage FAQs (service-specific FAQs live on their own pages)
+const homepageFaqs = faqs.slice(0, 8);
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homepageFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+
 // Split 8 FAQs into two columns of 4
-const col1 = faqs.slice(0, 4);
-const col2 = faqs.slice(4);
+const col1 = homepageFaqs.slice(0, 4);
+const col2 = homepageFaqs.slice(4, 8);
 
 export default function FAQ() {
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
@@ -28,6 +44,10 @@ export default function FAQ() {
       aria-labelledby="faq-heading"
       className="section-padding bg-bg border-t border-border"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="section-container">
 
         {/* Header */}
