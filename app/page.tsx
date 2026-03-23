@@ -12,7 +12,7 @@ import Footer from '@/src/components/Footer';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "PrintingService"],
   "@id": "https://globalprinters.in",
   name: "Global Printers",
   image: "https://globalprinters.in/og-image.jpg",
@@ -43,7 +43,12 @@ const localBusinessSchema = {
       closes: "19:00",
     },
   ],
-  sameAs: ["https://wa.me/+919414259587"],
+  sameAs: [
+    "https://wa.me/+919414259587",
+    "https://www.google.com/maps?cid=16124960375434698796",
+  ],
+  currenciesAccepted: "INR",
+  paymentAccepted: "Cash, UPI, Bank Transfer",
   hasMap: "https://www.google.com/maps?cid=16124960375434698796",
   foundingDate: "1996",
   areaServed: [

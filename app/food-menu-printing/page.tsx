@@ -28,8 +28,10 @@ const serviceSchema = {
     "@id": "https://globalprinters.in",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Shop No. 16, Arihant Complex, Rajendra Marg, Opp. Hotel La Abode, Bhopal Ganj",
       addressLocality: "Bhilwara",
       addressRegion: "Rajasthan",
+      postalCode: "311001",
       addressCountry: "IN",
     },
   },
@@ -85,7 +87,7 @@ export default function FoodMenuPrintingPage() {
         }) }}
       />
       <ServicePageLayout
-        h1="Food Menu Printing in India"
+        h1="Food Menu Printing in Bhilwara & Across India"
         subheadline="Restaurant and café menu printing across India — full-colour offset printing with wipe-clean lamination, in A4, A3, bi-fold, tri-fold, and booklet formats."
         intro="A menu is one of the most-handled pieces of print in any restaurant — it needs to look great and survive daily use. At Global Printers, we print food menus in Bhilwara for restaurants, cafes, hotels, and food delivery services across India. We offer wipe-clean matte lamination as standard for table-top menus, along with gloss and soft-touch finishes for display menus and premium dining establishments. Pan-India courier delivery means your new menus arrive within days, wherever you are."
         features={[

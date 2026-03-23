@@ -94,7 +94,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${playfair.variable} ${dmSans.variable} ${dmMono.variable}`}
     >
       <body className="antialiased">

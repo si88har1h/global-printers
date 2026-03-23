@@ -23,7 +23,7 @@ const servicePages = [
 const contactItems = [
   {
     icon: MapPin,
-    text: "Shop No. 16, Arihant Complex, Rajendra Marg, Bhopal Ganj, Bhilwara, Rajasthan 311001",
+    text: "Shop No. 16, Arihant Complex, Rajendra Marg, Opp. Hotel La Abode, Bhopal Ganj, Bhilwara, Rajasthan 311001",
     href: null,
   },
   { icon: Phone, text: "+91 94142 59587", href: "tel:+919414259587" },
@@ -32,7 +32,7 @@ const contactItems = [
     text: "globalprinter76@gmail.com",
     href: "mailto:globalprinter76@gmail.com",
   },
-  { icon: Clock, text: "Mon - Sat, 11 AM - 7 PM", href: null },
+  { icon: Clock, text: "Mon – Sat, 11:00 AM – 7:00 PM", href: null },
 ];
 
 export default function Footer() {
@@ -54,9 +54,9 @@ export default function Footer() {
             </a>
 
             <p className="font-body italic text-sm text-text-muted leading-relaxed max-w-[28ch]">
-              "Delivering exceptional prints,
+              "Bhilwara's offset printing press since 1996 —
               <br />
-              on time, every time."
+              exceptional quality, on time, every time."
             </p>
 
             {/* WhatsApp icon link */}

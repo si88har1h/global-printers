@@ -58,7 +58,7 @@ export default function Services() {
           >
             Twelve categories.
             <br />
-            <em className="italic text-accent">One trusted press.</em>
+            <em className="italic text-accent">One trusted press in Bhilwara.</em>
           </h2>
           <p className="mt-6 font-body text-base text-text-secondary leading-[1.75] max-w-[58ch]">
             From everyday business stationery to premium wedding invitations —

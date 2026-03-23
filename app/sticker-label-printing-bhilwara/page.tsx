@@ -28,8 +28,10 @@ const serviceSchema = {
     "@id": "https://globalprinters.in",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Shop No. 16, Arihant Complex, Rajendra Marg, Opp. Hotel La Abode, Bhopal Ganj",
       addressLocality: "Bhilwara",
       addressRegion: "Rajasthan",
+      postalCode: "311001",
       addressCountry: "IN",
     },
   },

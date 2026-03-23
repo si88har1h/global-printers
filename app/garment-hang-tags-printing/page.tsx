@@ -28,8 +28,10 @@ const serviceSchema = {
     "@id": "https://globalprinters.in",
     address: {
       "@type": "PostalAddress",
+      streetAddress: "Shop No. 16, Arihant Complex, Rajendra Marg, Opp. Hotel La Abode, Bhopal Ganj",
       addressLocality: "Bhilwara",
       addressRegion: "Rajasthan",
+      postalCode: "311001",
       addressCountry: "IN",
     },
   },
@@ -83,7 +85,7 @@ export default function GarmentHangTagsPrintingPage() {
         }) }}
       />
       <ServicePageLayout
-        h1="Garment Hang Tag Printing in India"
+        h1="Garment Hang Tag Printing in Bhilwara & Across India"
         subheadline="Custom hang tags for apparel and fashion brands — printed in Bhilwara, India's largest textile hub. 300–350 GSM art card and kraft, with foil stamping, embossing, and barcode printing."
         intro="Bhilwara is one of India's largest textile manufacturing hubs, and Global Printers has been printing for the garment and fabric industry here since 1996. We produce custom hang tags for apparel brands across India — from emerging fashion labels to established garment exporters. Our hang tags are printed on premium 300–350 GSM stock with precision die-cutting, eyelet punching, and string attachment, ready to ship to your warehouse or factory floor."
         features={[

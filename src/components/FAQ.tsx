@@ -64,9 +64,9 @@ export default function FAQ() {
               id="faq-heading"
               className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-normal leading-[1.2] text-text-primary"
             >
-              Everything you need{' '}
+              Everything you need to know{' '}
               <em className="italic text-accent">
-                to know.
+                about printing in Bhilwara.
               </em>
             </h2>
             <a

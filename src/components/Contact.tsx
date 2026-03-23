@@ -67,14 +67,14 @@ const contactDetails = [
     icon: MapPin,
     label: "Address",
     value:
-      "Shop No. 16, Arihant Complex, Rajendra Marg, Bhopal Ganj, Bhilwara, Rajasthan 311001",
+      "Shop No. 16, Arihant Complex, Rajendra Marg, Opp. Hotel La Abode, Bhopal Ganj, Bhilwara, Rajasthan 311001",
     href: null,
     highlight: false,
   },
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon - Sat, 11:00 AM - 7:00 PM",
+    value: "Mon – Sat, 11:00 AM – 7:00 PM",
     href: null,
     highlight: false,
   },
@@ -125,7 +125,7 @@ export default function Contact() {
             className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-normal leading-[1.2] text-text-primary"
           >
             Let's talk about{" "}
-            <em className="italic text-accent">your next print run.</em>
+            <em className="italic text-accent">your next print run in Bhilwara.</em>
           </h2>
         </motion.div>
 

@@ -54,7 +54,7 @@ export default function Hero() {
               className="font-display text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.15] font-normal text-text-primary"
               {...fadeUp(150)}
             >
-              Delivering Exceptional Prints,{" "}
+              Bhilwara's Premium Offset Printing Press —{" "}
               <em className="italic text-accent">
                 On Time, Every Time
               </em>
@@ -65,8 +65,7 @@ export default function Hero() {
               className="font-body text-lg leading-[1.75] max-w-[52ch] text-text-secondary"
               {...fadeUp(300)}
             >
-              From Bhilwara's industrial roots to Delhi NCR's D2C ecosystem —
-              premium, high-GSM print assets at scale.
+              Offset printing in Bhilwara since 1996 — serving Delhi NCR's D2C ecosystem with premium, high-GSM print assets at scale.
             </motion.p>
 
             {/* CTAs */}
