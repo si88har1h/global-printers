@@ -96,12 +96,15 @@ export default function BookReportPrintingBhilwaraPage() {
           { label: "300 GSM Laminated Covers", detail: "All book and report covers are printed on 300 GSM art board with your choice of gloss lamination, matte lamination, or soft-touch matte. UV spot coating on the cover logo is available for premium publications." },
           { label: "Full-Colour & B&W Interiors", detail: "Full-colour interiors for brand-heavy publications like annual reports and company profiles. Black-and-white interiors for cost-effective training manuals and technical guides. Mixed-colour sections (colour covers + B&W interior) also available." },
           { label: "Annual Reports & Corporate Publications", detail: "We specialise in corporate annual reports, CSR documents, investor presentations, and company profile booklets. Colour accuracy across the full print run is guaranteed — critical for boardroom-quality documents." },
-          { label: "MOQ 50 Copies, 72hr Turnaround", detail: "Minimum order is 50 copies for saddle-stitch booklets, 100 for perfect-bound books. Standard 72-hour turnaround from artwork approval. Bhilwara pickup or pan-India courier delivery for bulk orders." },
+          { label: "MOQ 50 Copies, 72hr Turnaround", detail: "Minimum 50 copies for saddle-stitch, 100 for perfect-bound. Most corporate book and report jobs are off the press within 72 hours. Direct pickup from our Bhilwara shop or courier delivery anywhere in India." },
         ]}
         portfolioItems={pagePortfolio}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Corporate publications with boardroom-quality finish."
+        ctaHeading="Ready to print your report or booklet? Message us on WhatsApp."
+        ctaBody="Share your page count, binding type, cover finish, and quantity — we'll send a detailed quote within the hour."
       />
     </>
   );

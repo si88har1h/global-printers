@@ -74,7 +74,7 @@ export const services: Service[] = [
     id: "garment-tags",
     name: "Garment Tags",
     description:
-      "Woven-look printed tags for apparel and fashion brands. Custom shapes, eyelet punching, and string attachment available. MOQ-friendly for growing labels.",
+      "Garment tags and clothing tags for apparel brands in Bhilwara. Custom shapes, eyelet punching, foil stamping, and string attachment. MOQ-friendly for growing fashion labels and established garment exporters.",
     iconName: "Scissors",
   },
   {

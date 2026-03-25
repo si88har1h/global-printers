@@ -83,7 +83,7 @@ export const faqs: FAQ[] = [
   // ── Garment Hang Tag FAQs ──
   {
     id: "faq-garment-01",
-    question: "What is the standard size for garment hang tags?",
+    question: "What sizes are available for garment tags and clothing tags?",
     answer:
       "The most common garment hang tag size is 55×90mm, but we print in any custom size. Popular alternatives include 50×80mm, 60×100mm, and die-cut shapes for premium brands. Custom sizing is available at no extra cost for orders above 500 pieces.",
   },
@@ -104,6 +104,12 @@ export const faqs: FAQ[] = [
     question: "Do you serve garment manufacturers in Bhilwara's textile industry?",
     answer:
       "Yes. Bhilwara is one of India's largest textile hubs, and we have been serving local garment and fabric manufacturers since 1996. We understand the production timelines and bulk requirements of the textile industry. Pan-India delivery is available for brands outside Bhilwara.",
+  },
+  {
+    id: "faq-garment-05",
+    question: "Do you print clothing tags in Bhilwara?",
+    answer:
+      "Yes. We print clothing tags, garment tags, and hang tags for apparel brands in Bhilwara and across India. Whether you need simple price tags or premium foil-stamped clothing tags with eyelet and string, we handle orders from 500 pieces upwards. Being based in Bhilwara — one of India's largest textile hubs — means faster turnaround and lower cost than metro-city printers.",
   },
 
   // ── Offset Printing Services FAQs ──

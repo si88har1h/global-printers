@@ -93,12 +93,15 @@ export default function CataloguePrintingBhilwaraPage() {
           { label: "Consistent Color Across Long Runs", detail: "Offset printing guarantees color consistency from page 1 to page 10,000 — critical for brand integrity in product catalogues." },
           { label: "Textile & Fashion Expertise", detail: "Based in Bhilwara — India's textile hub — we understand the exact quality standards garment and fashion brands require." },
           { label: "Custom Sizes Available", detail: "A4, A5, square (210×210mm), and custom dimensions. We'll advise on the size that best fits your product photography." },
-          { label: "72hr Turnaround", detail: "Standard catalogue jobs are ready within 72 hours from artwork approval. Rush timelines can be discussed." },
+          { label: "72hr Turnaround", detail: "Most catalogue jobs — including saddle-stitch and perfect-bound editions — leave our Bhilwara press within 72 hours of artwork approval. Rush timelines available on request." },
         ]}
         portfolioItems={pagePortfolio}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Catalogues that sell your products before your sales team does."
+        ctaHeading="Ready to print your catalogue? Message us on WhatsApp."
+        ctaBody="Share your page count, binding style, size, and quantity — we'll send a detailed quote within the hour."
       />
     </>
   );

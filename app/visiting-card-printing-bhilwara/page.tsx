@@ -99,6 +99,9 @@ export default function VisitingCardPrintingBhilwaraPage() {
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Business cards that make a lasting first impression."
+        ctaHeading="Ready to order visiting cards? Message us on WhatsApp."
+        ctaBody="Tell us your quantity, GSM preference, and finish choice — we'll send a quote within the hour from our Bhilwara press."
       />
     </>
   );

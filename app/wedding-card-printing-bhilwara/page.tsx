@@ -99,6 +99,9 @@ export default function WeddingCardPrintingBhilwaraPage() {
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Wedding invitations crafted to set the tone before guests arrive."
+        ctaHeading="Planning a wedding? Send us your card requirements."
+        ctaBody="Share your wedding date, design preferences, quantity, and finish — we'll send samples and a quote within the hour."
       />
     </>
   );

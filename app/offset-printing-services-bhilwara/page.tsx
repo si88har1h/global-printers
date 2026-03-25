@@ -94,12 +94,15 @@ export default function OffsetPrintingServicesBhilwaraPage() {
           { label: "Consistent Colour at Scale", detail: "Offset printing maintains CMYK colour consistency across runs of 500 to 100,000 units. No colour drift between the first copy and the last — critical for brand-colour-sensitive corporate print work." },
           { label: "All Finishes Available", detail: "Matte lamination, gloss lamination, soft-touch matte, spot UV, foil stamping (gold/silver), embossing, and aqueous coating. Mix finishes across covers and inner pages for brochures and catalogues." },
           { label: "B2B & Bulk Pricing", detail: "Our pricing structure rewards volume. Offset printing becomes progressively more cost-effective per unit from 500 to 100,000 copies. We provide detailed, transparent quotes with per-unit breakdowns at different quantities." },
-          { label: "72hr Turnaround, Pan-India Delivery", detail: "Standard turnaround is 72 hours from artwork approval for most products. Pan-India courier delivery for bulk orders. Our Bhilwara location means lower overhead and more competitive pricing than metro-city offset printers." },
+          { label: "72hr Turnaround, Pan-India Delivery", detail: "Most commercial offset jobs leave the press within 72 hours of artwork approval. Our Bhilwara location means lower overhead and more competitive per-unit pricing than equivalent metro-city printers — without sacrificing quality." },
         ]}
         portfolioItems={pagePortfolio}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Consistent colour across every copy, every run, at any scale."
+        ctaHeading="Ready to start your offset print run? Message us on WhatsApp."
+        ctaBody="Share your product type, quantity, and paper specs — we'll send a per-unit price breakdown within the hour."
       />
     </>
   );

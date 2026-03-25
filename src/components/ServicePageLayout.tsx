@@ -37,6 +37,14 @@ export interface ServicePageProps {
   serviceType: string;
   /** Links to related service pages for internal linking */
   relatedPages: RelatedPage[];
+  /** Overrides "Premium quality printing in Bhilwara, delivered on time." */
+  whyChooseUsHeading?: string;
+  /** Overrides "Ready to print? Message us on WhatsApp." */
+  ctaHeading?: string;
+  /** Overrides "Share your requirements and we'll send a quote within the hour. Based in Bhilwara, we serve pan-India for bulk orders." */
+  ctaBody?: string;
+  /** Overrides "Frequently asked questions." */
+  faqHeading?: string;
 }
 
 const fadeUp = (delay = 0) => ({
@@ -54,6 +62,10 @@ export default function ServicePageLayout({
   portfolioItems,
   faqs,
   relatedPages,
+  whyChooseUsHeading,
+  ctaHeading,
+  ctaBody,
+  faqHeading,
 }: ServicePageProps) {
   const [openId, setOpenId] = useState<string | null>(null);
 
@@ -114,7 +126,7 @@ export default function ServicePageLayout({
             <motion.div {...fadeUp(0)}>
               <p className="label-mono mb-4">Why Choose Us</p>
               <h2 className="font-display text-[clamp(1.5rem,2.8vw,2.25rem)] font-normal leading-[1.25] text-text-primary mb-6">
-                Premium quality printing in Bhilwara, delivered on time.
+                {whyChooseUsHeading ?? 'Premium quality printing in Bhilwara, delivered on time.'}
               </h2>
               <p className="font-body text-base text-text-secondary leading-[1.75] max-w-[60ch]">
                 {intro}
@@ -193,7 +205,7 @@ export default function ServicePageLayout({
             <motion.div {...fadeUp(0)} className="mb-12">
               <p className="label-mono mb-3">Common Questions</p>
               <h2 className="font-display text-[clamp(1.5rem,2.8vw,2.25rem)] font-normal leading-[1.25] text-text-primary">
-                Frequently asked questions.
+                {faqHeading ?? 'Frequently asked questions.'}
               </h2>
             </motion.div>
 
@@ -249,11 +261,10 @@ export default function ServicePageLayout({
           <motion.div {...fadeUp(0)} className="max-w-2xl mx-auto">
             <p className="label-mono mb-4">Get Started</p>
             <h2 className="font-display text-[clamp(1.75rem,3vw,2.5rem)] font-normal leading-[1.2] text-text-primary mb-4">
-              Ready to print? Message us on WhatsApp.
+              {ctaHeading ?? 'Ready to print? Message us on WhatsApp.'}
             </h2>
             <p className="font-body text-base text-text-secondary leading-[1.7] mb-8">
-              Share your requirements and we'll send a quote within the hour. Based in Bhilwara,
-              we serve pan-India for bulk orders.
+              {ctaBody ?? "Share your requirements and we'll send a quote within the hour. Based in Bhilwara, we serve pan-India for bulk orders."}
             </p>
             <a
               href={WA_LINK}

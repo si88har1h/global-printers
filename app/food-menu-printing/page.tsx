@@ -96,12 +96,15 @@ export default function FoodMenuPrintingPage() {
           { label: "Wipe-Clean Matte Lamination", detail: "Our most popular finish for restaurants — a wipe-clean matte surface that can be cleaned with a damp cloth between covers. Protects against spills, stains, and daily wear. Available on all single-sheet and folded menu formats." },
           { label: "Full-Colour Offset Printing", detail: "Vivid, accurate food photography reproduction on 170 GSM or 250 GSM art paper. Offset printing ensures consistent colour across your full order — from 50 menus for a new opening to 5,000 for a restaurant chain rollout." },
           { label: "Insert-Ready Formats", detail: "We print menu covers separately from inner pages for easy seasonal updates — replace just the inserts without reprinting the entire menu. Ideal for restaurants that update specials or pricing quarterly." },
-          { label: "Pan-India Delivery, 72hr Turnaround", detail: "Based in Bhilwara, Rajasthan, we deliver printed menus pan-India via courier. Standard turnaround is 72 hours from artwork approval. Large orders for multi-location chains can be coordinated with consolidated shipments." },
+          { label: "Pan-India Delivery, 72hr Turnaround", detail: "Printed menus are dispatched via courier from Bhilwara within 72 hours of artwork approval. Multi-location restaurant chains can consolidate orders into a single coordinated shipment to reduce per-unit delivery cost." },
         ]}
         portfolioItems={pagePortfolio}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Menus engineered to look great and survive daily restaurant use."
+        ctaHeading="Need menus for your restaurant? Message us on WhatsApp."
+        ctaBody="Tell us your menu format, size, lamination type, and quantity — we'll send a quote and turnaround estimate within the hour."
       />
     </>
   );

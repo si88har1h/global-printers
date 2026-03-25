@@ -90,12 +90,15 @@ export default function PrintingPressBhilwaraPage() {
           { label: "72-Hour Standard Turnaround", detail: "Most print orders are ready within 72 hours. Rush jobs can be accommodated on a case-by-case basis." },
           { label: "High-GSM Premium Stocks", detail: "We use 130–400 GSM art papers, board, and specialty stocks for results that look and feel premium." },
           { label: "All Finishes Available", detail: "Matte lamination, gloss lamination, spot UV, embossing, and foil stamping — all available from our Bhilwara press." },
-          { label: "Pan-India Delivery", detail: "We ship bulk orders across India. D2C brands in Delhi NCR, Mumbai, and Bengaluru are regular customers." },
+          { label: "Pan-India Delivery", detail: "We dispatch bulk print orders directly from our Bhilwara press to warehouse and fulfillment centres across India — Delhi NCR, Mumbai, Bengaluru, and beyond. No middlemen, no markup on freight." },
         ]}
         portfolioItems={portfolioItems}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Bhilwara's full-service offset press since 1996."
+        ctaHeading="Need a printing press in Bhilwara? Message us."
+        ctaBody="Tell us what you need — visiting cards, brochures, catalogues, or any print job — and we'll send a quote within the hour from our Bhilwara press."
       />
     </>
   );

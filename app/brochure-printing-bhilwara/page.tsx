@@ -99,6 +99,9 @@ export default function BrochurePrintingBhilwaraPage() {
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Precision-folded brochures that make your brand impossible to ignore."
+        ctaHeading="Ready to print your brochures? Message us on WhatsApp."
+        ctaBody="Share your brochure specs — fold type, size, quantity, and finish — and we'll send a quote within the hour."
       />
     </>
   );

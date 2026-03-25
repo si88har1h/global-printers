@@ -94,12 +94,15 @@ export default function StickerLabelPrintingBhilwaraPage() {
           { label: "Gloss, Matte & Chrome Finishes", detail: "High-gloss lamination for vibrant product labels. Soft-touch matte for premium packaging. Chrome/metallic film for cosmetics and luxury goods." },
           { label: "Product Labels for D2C Brands", detail: "Ingredient labels, barcode labels, branding stickers, and address labels — everything a D2C brand needs for packaging. Pan-India delivery for bulk orders from Bhilwara." },
           { label: "Garment Sticker Bands", detail: "Branded paper bands and belly bands for clothing, gift boxes, and retail bundles. Custom sizes and full-colour printing with tight tolerances." },
-          { label: "MOQ 100 Pieces, 72hr Turnaround", detail: "Order as few as 100 stickers or labels. Standard turnaround is 72 hours from artwork approval. Pickup from our Bhilwara shop or pan-India courier delivery." },
+          { label: "MOQ 100 Pieces, 72hr Turnaround", detail: "Order from 100 pieces — ideal for product launches and sampling. Die-cutting and lamination are completed on-press in Bhilwara, meaning your labels are ready within 72 hours without outsourcing any finishing stage." },
         ]}
         portfolioItems={pagePortfolio}
         faqs={pageFaqs}
         serviceType="PrintingService"
         relatedPages={relatedPages}
+        whyChooseUsHeading="Labels and stickers for D2C brands that demand precision."
+        ctaHeading="Need labels or stickers in Bhilwara? Message us on WhatsApp."
+        ctaBody="Tell us your material, shape, size, and quantity — we'll send a quote and substrate recommendations within the hour."
       />
     </>
   );
