@@ -56,6 +56,40 @@ const localBusinessSchema = {
     { "@type": "State", name: "Rajasthan" },
     { "@type": "Country", name: "India" },
   ],
+  email: "globalprinter76@gmail.com",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://globalprinters.in/logo/logo.svg",
+    width: 280,
+    height: 80,
+  },
+  knowsAbout: [
+    "Offset Printing",
+    "Brochure Printing",
+    "Visiting Card Printing",
+    "Catalogue Printing",
+    "Wedding Card Printing",
+    "Garment Tag Printing",
+    "Clothing Tag Printing",
+    "Sticker and Label Printing",
+    "Book and Report Printing",
+    "Food Menu Printing",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Printing Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Brochure Printing", url: "https://globalprinters.in/brochure-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Visiting Card Printing", url: "https://globalprinters.in/visiting-card-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Catalogue Printing", url: "https://globalprinters.in/catalogue-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Wedding Card Printing", url: "https://globalprinters.in/wedding-card-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sticker & Label Printing", url: "https://globalprinters.in/sticker-label-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Garment Tag Printing", url: "https://globalprinters.in/garment-tags-printing" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Offset Printing Services", url: "https://globalprinters.in/offset-printing-services-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Book & Report Printing", url: "https://globalprinters.in/book-report-printing-bhilwara" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Food Menu Printing", url: "https://globalprinters.in/food-menu-printing" } },
+    ],
+  },
 };
 
 export default function Home() {

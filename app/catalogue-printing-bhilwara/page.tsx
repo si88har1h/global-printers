@@ -38,6 +38,7 @@ const serviceSchema = {
   areaServed: [
     { "@type": "City", name: "Bhilwara" },
     { "@type": "State", name: "Rajasthan" },
+    { "@type": "Country", name: "India" },
   ],
   description:
     "Product catalogue printing in Bhilwara — saddle-stitch and perfect-bound multi-page catalogues for fashion, textile, and retail brands.",
@@ -60,7 +61,7 @@ const relatedPages = [
   { title: "Printing Press Bhilwara", href: "/printing-press-bhilwara" },
   { title: "Brochure Printing", href: "/brochure-printing-bhilwara" },
   { title: "Sticker & Label Printing", href: "/sticker-label-printing-bhilwara" },
-  { title: "Garment Hang Tags", href: "/garment-hang-tags-printing" },
+  { title: "Garment Tags", href: "/garment-tags-printing" },
 ];
 
 export default function CataloguePrintingBhilwaraPage() {
@@ -79,6 +80,13 @@ export default function CataloguePrintingBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Catalogue Printing", item: "https://globalprinters.in/catalogue-printing-bhilwara" },
+              ],
             },
           ],
         }) }}

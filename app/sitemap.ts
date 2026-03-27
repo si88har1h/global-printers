@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/garment-hang-tags-printing`,
+      url: `${BASE_URL}/garment-tags-printing`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

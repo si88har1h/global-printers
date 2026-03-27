@@ -38,6 +38,7 @@ const serviceSchema = {
   areaServed: [
     { "@type": "City", name: "Bhilwara" },
     { "@type": "State", name: "Rajasthan" },
+    { "@type": "Country", name: "India" },
   ],
   description:
     "Brochure and pamphlet printing in Bhilwara — tri-fold, bi-fold, and z-fold formats on high-GSM coated paper with matte or gloss lamination.",
@@ -79,6 +80,13 @@ export default function BrochurePrintingBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Brochure Printing", item: "https://globalprinters.in/brochure-printing-bhilwara" },
+              ],
             },
           ],
         }) }}

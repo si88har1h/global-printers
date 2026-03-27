@@ -38,6 +38,7 @@ const serviceSchema = {
   areaServed: [
     { "@type": "City", name: "Bhilwara" },
     { "@type": "State", name: "Rajasthan" },
+    { "@type": "Country", name: "India" },
   ],
   description:
     "Premium visiting card and business card printing in Bhilwara — 350–400 GSM, matte lamination, gloss, and spot UV finishes.",
@@ -79,6 +80,13 @@ export default function VisitingCardPrintingBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Visiting Card Printing", item: "https://globalprinters.in/visiting-card-printing-bhilwara" },
+              ],
             },
           ],
         }) }}

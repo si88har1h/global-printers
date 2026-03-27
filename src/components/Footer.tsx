@@ -18,6 +18,11 @@ const servicePages = [
   { label: "Visiting Card Printing", href: "/visiting-card-printing-bhilwara" },
   { label: "Wedding Card Printing", href: "/wedding-card-printing-bhilwara" },
   { label: "Brochure Printing", href: "/brochure-printing-bhilwara" },
+  { label: "Sticker & Label Printing", href: "/sticker-label-printing-bhilwara" },
+  { label: "Garment Tags", href: "/garment-tags-printing" },
+  { label: "Offset Printing Services", href: "/offset-printing-services-bhilwara" },
+  { label: "Book & Report Printing", href: "/book-report-printing-bhilwara" },
+  { label: "Food Menu Printing", href: "/food-menu-printing" },
 ];
 
 const contactItems = [
@@ -150,7 +155,7 @@ export default function Footer() {
       <div className="border-t border-border">
         <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="font-body text-xs text-text-muted">
-            © 2025 Global Printers. All rights reserved.
+            © 2026 Global Printers. All rights reserved.
           </p>
           <p className="font-mono text-xs text-text-muted tracking-[0.08em]">
             EST. 1996 · BHILWARA, RAJASTHAN

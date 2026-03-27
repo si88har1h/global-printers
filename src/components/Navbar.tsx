@@ -16,7 +16,7 @@ const servicePages = [
     label: "Sticker & Label Printing",
     href: "/sticker-label-printing-bhilwara",
   },
-  { label: "Garment Hang Tags", href: "/garment-hang-tags-printing" },
+  { label: "Garment Tags", href: "/garment-tags-printing" },
   {
     label: "Offset Printing Services",
     href: "/offset-printing-services-bhilwara",

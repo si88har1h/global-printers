@@ -81,6 +81,13 @@ export default function OffsetPrintingServicesBhilwaraPage() {
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
             },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Offset Printing Services", item: "https://globalprinters.in/offset-printing-services-bhilwara" },
+              ],
+            },
           ],
         }) }}
       />

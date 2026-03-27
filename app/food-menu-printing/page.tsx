@@ -83,6 +83,13 @@ export default function FoodMenuPrintingPage() {
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
             },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Food Menu Printing", item: "https://globalprinters.in/food-menu-printing" },
+              ],
+            },
           ],
         }) }}
       />

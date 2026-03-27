@@ -74,7 +74,7 @@ export default function WhyChooseUs() {
               id="why-heading"
               className="font-display text-[clamp(2rem,3.5vw,3rem)] font-normal leading-[1.15] text-text-primary"
             >
-              Not just a vendor.{' '}
+              Bhilwara's press.{' '}
               <em className="italic text-accent">
                 Your print infrastructure.
               </em>

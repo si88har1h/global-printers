@@ -83,6 +83,13 @@ export default function BookReportPrintingBhilwaraPage() {
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
             },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Book & Report Printing", item: "https://globalprinters.in/book-report-printing-bhilwara" },
+              ],
+            },
           ],
         }) }}
       />

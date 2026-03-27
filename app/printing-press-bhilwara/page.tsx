@@ -38,6 +38,7 @@ const serviceSchema = {
   areaServed: [
     { "@type": "City", name: "Bhilwara" },
     { "@type": "State", name: "Rajasthan" },
+    { "@type": "Country", name: "India" },
   ],
   description:
     "Full-service offset printing press in Bhilwara, Rajasthan. We print brochures, catalogues, visiting cards, wedding cards, garment tags, stickers, and more for businesses across India.",
@@ -54,7 +55,7 @@ const relatedPages = [
   { title: "Wedding Card Printing", href: "/wedding-card-printing-bhilwara" },
   { title: "Brochure Printing", href: "/brochure-printing-bhilwara" },
   { title: "Sticker & Label Printing", href: "/sticker-label-printing-bhilwara" },
-  { title: "Garment Hang Tags", href: "/garment-hang-tags-printing" },
+  { title: "Garment Tags", href: "/garment-tags-printing" },
   { title: "Offset Printing Services", href: "/offset-printing-services-bhilwara" },
   { title: "Book & Report Printing", href: "/book-report-printing-bhilwara" },
   { title: "Food Menu Printing", href: "/food-menu-printing" },
@@ -76,6 +77,13 @@ export default function PrintingPressBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Printing Press Bhilwara", item: "https://globalprinters.in/printing-press-bhilwara" },
+              ],
             },
           ],
         }) }}

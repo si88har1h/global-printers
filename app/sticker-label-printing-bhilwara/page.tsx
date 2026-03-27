@@ -61,7 +61,7 @@ const relatedPages = [
   { title: "Printing Press Bhilwara", href: "/printing-press-bhilwara" },
   { title: "Visiting Card Printing", href: "/visiting-card-printing-bhilwara" },
   { title: "Catalogue Printing", href: "/catalogue-printing-bhilwara" },
-  { title: "Garment Hang Tags", href: "/garment-hang-tags-printing" },
+  { title: "Garment Tags", href: "/garment-tags-printing" },
 ];
 
 export default function StickerLabelPrintingBhilwaraPage() {
@@ -80,6 +80,13 @@ export default function StickerLabelPrintingBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Sticker & Label Printing", item: "https://globalprinters.in/sticker-label-printing-bhilwara" },
+              ],
             },
           ],
         }) }}

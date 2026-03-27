@@ -38,6 +38,7 @@ const serviceSchema = {
   areaServed: [
     { "@type": "City", name: "Bhilwara" },
     { "@type": "State", name: "Rajasthan" },
+    { "@type": "Country", name: "India" },
   ],
   description:
     "Luxury wedding invitation card printing in Bhilwara — embossing, gold foil stamping, premium card stock, and custom design support for weddings across Rajasthan and India.",
@@ -79,6 +80,13 @@ export default function WeddingCardPrintingBhilwaraPage() {
                 name: faq.question,
                 acceptedAnswer: { "@type": "Answer", text: faq.answer },
               })),
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://globalprinters.in" },
+                { "@type": "ListItem", position: 2, name: "Wedding Card Printing", item: "https://globalprinters.in/wedding-card-printing-bhilwara" },
+              ],
             },
           ],
         }) }}
